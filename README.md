@@ -1,70 +1,151 @@
-# Getting Started with Create React App
+# 🚀 Zorvyn Fintech Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive financial dashboard built using **React + Material UI**, featuring role-based UI, interactive charts, and clean UI/UX.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Overview
 
-### `npm start`
+Zorvyn Dashboard is a fully responsive admin dashboard designed to manage financial data such as transactions, insights, and analytics.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It focuses on:
+- Clean UI/UX
+- Responsive design (mobile + desktop)
+- Role-based access (Admin / Viewer)
+- Modular architecture
+- Light/Dark theme support
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎨 1. Modern UI Design
+- Clean dark & light themes
+- Gradient + glow effects (charts)
+- Card-based layout
 
-### `npm run build`
+### 📱 2. Fully Responsive
+- Works across:
+  - Mobile 📱
+  - Tablet 💻
+  - Desktop 🖥️
+- Sidebar auto-collapses on small screens
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔐 3. Role-Based UI (RBAC)
+- Admin:
+  - Can add transactions
+  - Full access
+- Viewer:
+  - Read-only access
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📊 4. Dashboard Analytics
+- Summary Cards:
+  - Total Balance
+  - Income
+  - Expenses
+  - Transactions
+- Revenue Line Chart (glow effect)
+- Expense Pie Chart
+- Insights Section
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📋 5. Transactions Table
+- Search functionality
+- Filter (Income / Expense)
+- Pagination
+- Status color coding:
+  - Completed ✅
+  - Pending ⏳
 
-### `npm run eject`
+### 🌙 6. Theme Toggle
+- Dark mode 🌑
+- Light mode ☀️
+- Dynamic UI adaptation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧠 State Management
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Used **React Context API** for centralized state:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Managed States:
+- User Role (Admin / Viewer)
+- Transactions Data
+- Filter Type (Income / Expense)
+- Derived Filtered Data
 
-## Learn More
+### Why Context?
+- Lightweight
+- No extra dependencies
+- Scalable for mid-size apps
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🗂️ Project Structure
 
-### Code Splitting
+src/
+│
+├── Dashboard/
+│ ├── TopBar.jsx
+│ ├── SideBar.jsx
+│ ├── Header.jsx
+│ ├── SummaryCards.jsx
+│ ├── Charts.jsx
+│ ├── Insights.jsx
+│ ├── Transactions.jsx
+│
+├── Data/
+│ └── mockData.js
+│
+├── context/
+│ └── AppContext.jsx
+│
+├── Theme.js
+├── App.js
+└── index.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## ⚙️ Installation & Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 1️⃣ Clone the repo
 
-### Making a Progressive Web App
+```bash
+git clone https://github.com/harshita-coder22/zorvyn-dashboard.git
+cd zorvyn-dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 2️⃣ Install dependencies
 
-### Advanced Configuration
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🧩 Tech Stack
+React.js ⚛️
+Material UI (MUI) 🎨
+Recharts 📊
+Context API 🧠
 
-### Deployment
+🧩 Tech Stack
+React.js ⚛️
+Material UI (MUI) 🎨
+Nivo 📊
+Context API 🧠
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🔍 Attention to Detail
+Light mode text visibility fixed
+Hover states for charts
+Sidebar responsiveness
+Button access control (RBAC)
+Smooth spacing & alignment
+Export CSV functionality
+Clean typography
 
-### `npm run build` fails to minify
+🚀 Future Improvements
+API integration (replace mock data)
+Authentication system
+Advanced filters
+Animations (Framer Motion)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👩‍💻 Author
+
+Harshita
+Frontend Developer 💙

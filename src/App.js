@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import { CssBaseline, ThemeProvider, Box, useMediaQuery } from "@mui/material";
+import { ColorModeContext, useMode } from "./Theme";
+import Topbar from "./Dashboard/TopBar.jsx";
+import MySidebar from "./Dashboard/SideBar.jsx";
+import Header from "./Dashboard/Header.jsx";
+import SummaryCards from "./Dashboard/SummaryCards.jsx";
+import Charts from "./Dashboard/Charts.jsx";
+import Insights from "./Dashboard/Insights.jsx";
+import Transactions from "./Dashboard/Transactions.jsx";
 
 function App() {
+  const [theme, colorMode] = useMode();
+  const isMobile = useMediaQuery("(max-width:768px)");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+
+        <Box display="flex" height="100vh" className="app">
+          <MySidebar isMobile={isMobile} />
+
+          <Box
+            flex="1"
+            display="flex"
+            flexDirection="column"
+            overflow="hidden"
+            className="content"
+            sx={{ minWidth: 0 }}
+          >
+            <Topbar isMobile={isMobile} />
+
+            <Box
+              flex="1"
+              overflow="auto"
+              p={{ xs: "12px", sm: "16px", md: "20px" }}
+            >
+              <Header />
+              <SummaryCards />
+              <Charts />
+              <Insights />
+              <Transactions />
+            </Box>
+          </Box>
+        </Box>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 }
 
