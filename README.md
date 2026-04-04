@@ -110,7 +110,10 @@ src/
 ---
 ## Screenshot 
 
-![Alt Text](https://github.com/harshita-coder22/zorvyn-dashboard/tree/315e4b0a0a9d2630d95daca61db75f5eb8937b2d/FireShot)
+![Alt Text](https://github.com/harshita-coder22/zorvyn-dashboard/blob/7613b651e82c7b6ac7b15609aa3aa3cf0e974849/FireShot/Advance%20sorting.png)
+![Alt Text](https://github.com/harshita-coder22/zorvyn-dashboard/blob/7613b651e82c7b6ac7b15609aa3aa3cf0e974849/FireShot/Dark%20mode.png)
+![Alt Text](https://github.com/harshita-coder22/zorvyn-dashboard/blob/7613b651e82c7b6ac7b15609aa3aa3cf0e974849/FireShot/Light%20%20mode.png)
+![Alt Text](https://github.com/harshita-coder22/zorvyn-dashboard/blob/7613b651e82c7b6ac7b15609aa3aa3cf0e974849/FireShot/mobile%20responsive.png)
 
 ---
 
